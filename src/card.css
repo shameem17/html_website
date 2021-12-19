@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+ .new{
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: #f2f2f2;
+  text-align: center;
+  padding: 30px;
+}
+.new .container{
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.new .card{
+  height: 300px;
+  max-width: 30%;
+  margin: 0 20px;
+  background: white;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+.new .card:hover{
+  height: 470px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  transition: 0.33s;
+}
+
+.new .card .img{
+  height: 200px;
+  width: 100%;
+}
+.new .card{
+   box-shadow: 10px 15px 10px 0px rgba(10,100, 80,0.2);
+}
+.new .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.new .card .top-text{
+  padding: 5px;
+}
+.new .card .top-text .name{
+  font-size: 25px;
+  font-weight: 600;
+  color: #202020;
+}
+.new .card .top-text p{
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.new .card .img{
+  border-bottom: 3px solid #f2f2f2;
+
+}
+.new .card .bottom-text{
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+.new .card:hover .bottom-text{
+  opacity: 1;
+  visibility: visible;
+  transition: 0.35s;
+}
+.new .card .bottom-text .text{
+  text-align: justify;
+}
+.new .card .bottom-text .btn{
+  margin: 10px 0;
+  text-align: left;
+}
+.new .card .bottom-text .btn a{
+  text-decoration: none;
+  background: #e74c3c;
+  color: #f2f2f2;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+.new .card .bottom-text .btn a:hover{
+  transform: scale(0.9);
+  
+}
+@media screen and (max-width: 978px) {
+ .new  .container{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .new{
+    height: 100%;
+  }
+  .new .card{
+    height: 320px;
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}
